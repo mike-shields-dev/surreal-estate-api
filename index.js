@@ -19,7 +19,7 @@ require('dotenv').config({
 
 app.use(cors({ credentials: true, origin: true }));
 app.options('*', cors());
-app.use(bodyParser.json());
+app.use(express.json());
 app.use(methodOverride());
 
 
