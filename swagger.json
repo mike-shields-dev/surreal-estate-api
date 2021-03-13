@@ -184,6 +184,24 @@
           "Favourites"
         ],
         "summary": "Get all favourites",
+        "parameters": [
+          {
+            "name": "query",
+            "description": "query object for filtering favouites by user",
+            "type": "string",
+            "required": false,
+            "default": "{\"fbUserId\":\"foo\"}",
+            "in": "query"
+          },
+          {
+            "name": "populate",
+            "description": "the database model we want to include in the response",
+            "in":"query",
+            "type": "string",
+            "required": true,
+            "default": "propertyListing"
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
