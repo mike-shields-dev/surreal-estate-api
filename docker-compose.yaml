@@ -16,4 +16,4 @@ services:
       
 
   database:
-    image: mongo
+    image: mongo:4.4.14
